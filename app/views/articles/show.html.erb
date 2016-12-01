@@ -7,7 +7,11 @@
   <strong>Text:</strong>
   <%= @article.text %>
 </p>
- 
+
+<p>
+<strong>Image:</strong><br>
+<li><%= image_tag(@article.image.url(:med)) %></li>
+</p>
 <h2>Comments</h2>
 <%= render @article.comments %>
  
